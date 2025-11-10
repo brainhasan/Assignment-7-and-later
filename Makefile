@@ -1,8 +1,4 @@
-
-SUBDIRS =  misc-progs misc-modules \
-           skull scull scullc scullp lddbus sculld scullv shortprint simple tty \
-	   pci usb\
-	   sbull snull short
+SUBDIRS = scull
 
 all: subdirs
 
@@ -11,3 +7,4 @@ subdirs:
 
 clean:
 	for n in $(SUBDIRS); do $(MAKE) -C $$n clean; done
+
